@@ -49,6 +49,7 @@ a:focus {
   text-decoration: none;
   color: #1d9b6c;
 }
+
 .light {
   font-weight: 400;
 }
@@ -203,6 +204,7 @@ a:focus {
     transform: scale(1);
   }
 }
+
 @-moz-keyframes pulse {
   0% {
     -moz-transform: scale(1);
@@ -217,6 +219,7 @@ a:focus {
     transform: scale(1);
   }
 }
+
 .content-section {
   padding-top: 100px;
 }
@@ -232,6 +235,13 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+
+.download-section img {
+  background-color: rgba(255,255,255,0.60);
+  padding: 13px;
+  padding-right: 17px
+}
+
 .contact-section {
   width: 100%;
   padding: 50px 0;
