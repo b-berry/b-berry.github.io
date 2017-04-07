@@ -238,6 +238,8 @@ a:focus {
 
 .download-section img {
   background-color: rgba(255,255,255,0.60);
+  border-radius: 7px;
+  opacity: 0.93;
   padding: 13px;
   padding-right: 17px
 }
