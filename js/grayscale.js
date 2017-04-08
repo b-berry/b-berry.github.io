@@ -34,12 +34,12 @@ $('.navbar-collapse ul li a').click(function() {
 // Google Maps Scripts
 var map = null;
 var lat_init = 39.51;
-var lng_init = -98.17;
+var lng_init = -108.17;
 function initMap() {
 
     var mapOptions = {
         
-        zoom: 4,
+        zoom: 3,
         center: new google.maps.LatLng(lat_init,lng_init),      // Globe
 
         // Disables the default Google Maps UI components
@@ -171,6 +171,55 @@ function initMap() {
                   zindex: 10
                  }, 
         },
+        { id: 'office', 
+          data: { name: 'Denver',
+                  lat: 39.7392358,
+                  lng: -104.990251,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
+          data: { name: 'Los Angeles',
+                  lat: 34.0522342,
+                  lng: -118.2436849,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
+          data: { name: 'San Fransisco',
+                  lat: 37.7749295,
+                  lng: -122.4194155,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
+          data: { name: 'Ottawa',
+                  lat: 45.4215296,
+                  lng: -75.697193099,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
+          data: { name: 'Paris',
+                  lat: 48.856614,
+                  lng: 2.3522219,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
+          data: { name: 'Seoul',
+                  lat: 37.566535,
+                  lng: 126.9779692,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
+          data: { name: 'Warsaw',
+                  lat: 52.2296756,
+                  lng: 21.0122287,
+                  zindex: 9 
+                 }, 
+        },
         { id: 'star', 
           data: { name: 'Seattle',
                   lat: 47.6062095,
@@ -178,24 +227,31 @@ function initMap() {
                   zindex: 10
                  }, 
         },
+        //{ id: 'human', 
+        //  data: { name: 'San Diego',
+        //          lat: 32.715738,
+        //          lng: -117.1610838,
+        //          zindex: 9 
+        //         }, 
+        //},
         { id: 'human', 
-          data: { name: 'Austin',
-                  lat: 30.267153,
-                  lng: -97.7430608,
+          data: { name: 'Berlin',
+                  lat: 52.52000659,
+                  lng: 13.404954,
                   zindex: 9 
                  }, 
         },
-        { id: 'human', 
+        { id: 'start', 
           data: { name: 'Minneapolis',
                   lat: 44.977753,
                   lng: -93.2650108,
                   zindex: 9 
                  }, 
         },
-        { id: 'human', 
-          data: { name: 'San Diego',
-                  lat: 32.715738,
-                  lng: -117.1610838,
+        { id: 'motorcycle', 
+          data: { name: 'Austin',
+                  lat: 30.267153,
+                  lng: -97.7430608,
                   zindex: 9 
                  }, 
         }
@@ -208,12 +264,22 @@ function initMap() {
                         origin: new google.maps.Point(0, 0),
                         anchor: new google.maps.Point(10, 34)
                       }
+    styles['motorcycle'] = { url: 'img/pins/motorcycle.png', 
+                        size: new google.maps.Size(20, 34),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(10, 34)
+                      }
     styles['office'] = { url: 'img/pins/office.png', 
                         size: new google.maps.Size(20, 34),
                         origin: new google.maps.Point(0, 0),
                         anchor: new google.maps.Point(10, 34)
                       }
     styles['star'] = { url: 'img/pins/star.png', 
+                        size: new google.maps.Size(20, 34),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(10, 34)
+                      }
+    styles['start'] = { url: 'img/pins/start.png', 
                         size: new google.maps.Size(20, 34),
                         origin: new google.maps.Point(0, 0),
                         anchor: new google.maps.Point(10, 34)
@@ -234,4 +300,37 @@ function initMap() {
         zIndex: poi['data']['zindex']
       });
     }
+
+    // Create my polyline routes
+    var motoRideCoordinates = [
+        {lat: 44.9777530, lng: -93.26501080},
+        {lat: 46.0130060, lng: -91.48462080},
+        {lat: 46.6717890, lng: -85.98412340},
+        {lat: 45.5601370, lng: -82.00998799},
+        {lat: 43.6837150, lng: -80.43054269},
+        {lat: 42.9981150, lng: -78.18751670},
+        {lat: 42.2934130, lng: -75.47934769},
+        {lat: 41.7637110, lng: -72.68509329},
+        {lat: 40.8256560, lng: -73.69818579},
+        {lat: 38.9351125, lng: -74.90600529},
+        {lat: 36.2946008, lng: -76.25104610},
+        {lat: 34.7540524, lng: -77.43024140},
+        {lat: 33.5604168, lng: -81.71955330},
+        {lat: 32.3668052, lng: -86.29996890},
+        {lat: 29.9510657, lng: -90.07153230},
+        {lat: 30.0801740, lng: -94.12655620},
+        {lat: 30.2671530, lng: -97.74306080}
+    ];
+
+    // Set Polyline Styles
+    var flightPath = new google.maps.Polyline({
+        path: motoRideCoordinates,
+        geodesic: true,
+        strokeColor: '#42DCA3',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+    });
+
+    flightPath.setMap(map);
+
 }

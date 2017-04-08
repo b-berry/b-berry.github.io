@@ -51,12 +51,12 @@
               "location_type": "APPROXIMATE",
               "viewport": {
                 "northeast": {
-                  "lat": 40.9175771,
+                  "lat": 40.9152555,
                   "lng": -73.70027209999999
                 },
                 "southwest": {
-                  "lat": 40.4773991,
-                  "lng": -74.25908989999999
+                  "lat": 40.4960439,
+                  "lng": -74.2557349
                 }
               }
             },
@@ -88,14 +88,6 @@
                   "political",
                   "sublocality",
                   "sublocality_level_1"
-                ]
-              },
-              {
-                "long_name": "New York",
-                "short_name": "New York",
-                "types": [
-                  "locality",
-                  "political"
                 ]
               },
               {
@@ -330,6 +322,638 @@
     "longitude": -122.3320708
   },
   {
+    "address": "Denver, CO",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "Denver",
+                "short_name": "Denver",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Denver County",
+                "short_name": "Denver County",
+                "types": [
+                  "administrative_area_level_2",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Colorado",
+                "short_name": "CO",
+                "types": [
+                  "administrative_area_level_1",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "United States",
+                "short_name": "US",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "Denver, CO, USA",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 39.91424689999999,
+                  "lng": -104.6002959
+                },
+                "southwest": {
+                  "lat": 39.614431,
+                  "lng": -105.109927
+                }
+              },
+              "location": {
+                "lat": 39.7392358,
+                "lng": -104.990251
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 39.91424689999999,
+                  "lng": -104.6002959
+                },
+                "southwest": {
+                  "lat": 39.614431,
+                  "lng": -105.109927
+                }
+              }
+            },
+            "place_id": "ChIJzxcfI6qAa4cR1jaKJ_j0jhE",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 39.7392358,
+    "longitude": -104.990251
+  },
+  {
+    "address": "Los Angeles, CA",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "Los Angeles",
+                "short_name": "Los Angeles",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Los Angeles County",
+                "short_name": "Los Angeles County",
+                "types": [
+                  "administrative_area_level_2",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "California",
+                "short_name": "CA",
+                "types": [
+                  "administrative_area_level_1",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "United States",
+                "short_name": "US",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "Los Angeles, CA, USA",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 34.3373061,
+                  "lng": -118.1552891
+                },
+                "southwest": {
+                  "lat": 33.7036519,
+                  "lng": -118.6681759
+                }
+              },
+              "location": {
+                "lat": 34.0522342,
+                "lng": -118.2436849
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 34.3373061,
+                  "lng": -118.1552891
+                },
+                "southwest": {
+                  "lat": 33.7036917,
+                  "lng": -118.6681759
+                }
+              }
+            },
+            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 34.0522342,
+    "longitude": -118.2436849
+  },
+  {
+    "address": "San Fransisco, cA",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "San Francisco",
+                "short_name": "SF",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "San Francisco County",
+                "short_name": "San Francisco County",
+                "types": [
+                  "administrative_area_level_2",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "California",
+                "short_name": "CA",
+                "types": [
+                  "administrative_area_level_1",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "United States",
+                "short_name": "US",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "San Francisco, CA, USA",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 37.9298239,
+                  "lng": -122.28178
+                },
+                "southwest": {
+                  "lat": 37.6398299,
+                  "lng": -123.173825
+                }
+              },
+              "location": {
+                "lat": 37.7749295,
+                "lng": -122.4194155
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 37.812,
+                  "lng": -122.3482
+                },
+                "southwest": {
+                  "lat": 37.70339999999999,
+                  "lng": -122.527
+                }
+              }
+            },
+            "place_id": "ChIJIQBpAG2ahYAR_6128GcTUEo",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 37.7749295,
+    "longitude": -122.4194155
+  },
+  {
+    "address": "Berlin, Germany",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "Berlin",
+                "short_name": "Berlin",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Berlin",
+                "short_name": "Berlin",
+                "types": [
+                  "administrative_area_level_1",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Germany",
+                "short_name": "DE",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "Berlin, Germany",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 52.6754542,
+                  "lng": 13.7611176
+                },
+                "southwest": {
+                  "lat": 52.338234,
+                  "lng": 13.088346
+                }
+              },
+              "location": {
+                "lat": 52.52000659999999,
+                "lng": 13.404954
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 52.6754542,
+                  "lng": 13.7611175
+                },
+                "southwest": {
+                  "lat": 52.33962959999999,
+                  "lng": 13.0911733
+                }
+              }
+            },
+            "place_id": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 52.52000659999999,
+    "longitude": 13.404954
+  },
+  {
+    "address": "Ottawa, Canada",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "Ottawa",
+                "short_name": "Ottawa",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Ottawa Division",
+                "short_name": "Ottawa Division",
+                "types": [
+                  "administrative_area_level_2",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Ontario",
+                "short_name": "ON",
+                "types": [
+                  "administrative_area_level_1",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Canada",
+                "short_name": "CA",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "Ottawa, ON, Canada",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 45.5375801,
+                  "lng": -75.2465979
+                },
+                "southwest": {
+                  "lat": 44.962733,
+                  "lng": -76.3539158
+                }
+              },
+              "location": {
+                "lat": 45.4215296,
+                "lng": -75.69719309999999
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 45.5375801,
+                  "lng": -75.2465979
+                },
+                "southwest": {
+                  "lat": 44.962733,
+                  "lng": -76.3539158
+                }
+              }
+            },
+            "place_id": "ChIJrxNRX7IFzkwR7RXdMeFRaoo",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 45.4215296,
+    "longitude": -75.69719309999999
+  },
+  {
+    "address": "Paris, France",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "Paris",
+                "short_name": "Paris",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Paris",
+                "short_name": "Paris",
+                "types": [
+                  "administrative_area_level_2",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Île-de-France",
+                "short_name": "Île-de-France",
+                "types": [
+                  "administrative_area_level_1",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "France",
+                "short_name": "FR",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "Paris, France",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 48.9021449,
+                  "lng": 2.4699208
+                },
+                "southwest": {
+                  "lat": 48.815573,
+                  "lng": 2.224199
+                }
+              },
+              "location": {
+                "lat": 48.856614,
+                "lng": 2.3522219
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 48.9021449,
+                  "lng": 2.4699208
+                },
+                "southwest": {
+                  "lat": 48.815573,
+                  "lng": 2.225193
+                }
+              }
+            },
+            "place_id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 48.856614,
+    "longitude": 2.3522219
+  },
+  {
+    "address": "Seoul, South Korea",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "Seoul",
+                "short_name": "Seoul",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "South Korea",
+                "short_name": "KR",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "Seoul, South Korea",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 37.7017495,
+                  "lng": 127.1835899
+                },
+                "southwest": {
+                  "lat": 37.4259627,
+                  "lng": 126.7645827
+                }
+              },
+              "location": {
+                "lat": 37.566535,
+                "lng": 126.9779692
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 37.6956,
+                  "lng": 127.1823
+                },
+                "southwest": {
+                  "lat": 37.4346,
+                  "lng": 126.7968
+                }
+              }
+            },
+            "place_id": "ChIJzWXFYYuifDUR64Pq5LTtioU",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 37.566535,
+    "longitude": 126.9779692
+  },
+  {
+    "address": "Warsaw, Poland",
+    "styleUrl": "img/marker-office.png",
+    "data": [
+      {
+        "results": [
+          {
+            "address_components": [
+              {
+                "long_name": "Warsaw",
+                "short_name": "Warsaw",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Warszawa",
+                "short_name": "Warszawa",
+                "types": [
+                  "administrative_area_level_2",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Masovian Voivodeship",
+                "short_name": "Masovian Voivodeship",
+                "types": [
+                  "administrative_area_level_1",
+                  "political"
+                ]
+              },
+              {
+                "long_name": "Poland",
+                "short_name": "PL",
+                "types": [
+                  "country",
+                  "political"
+                ]
+              }
+            ],
+            "formatted_address": "Warsaw, Poland",
+            "geometry": {
+              "bounds": {
+                "northeast": {
+                  "lat": 52.3679992,
+                  "lng": 21.2710983
+                },
+                "southwest": {
+                  "lat": 52.0978767,
+                  "lng": 20.8512898
+                }
+              },
+              "location": {
+                "lat": 52.2296756,
+                "lng": 21.0122287
+              },
+              "location_type": "APPROXIMATE",
+              "viewport": {
+                "northeast": {
+                  "lat": 52.3679992,
+                  "lng": 21.2710983
+                },
+                "southwest": {
+                  "lat": 52.0978767,
+                  "lng": 20.8512898
+                }
+              }
+            },
+            "place_id": "ChIJAZ-GmmbMHkcR_NPqiCq-8HI",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ],
+        "status": "OK"
+      }
+    ],
+    "latitude": 52.2296756,
+    "longitude": 21.0122287
+  },
+  {
     "address": "Jersey City, NJ",
     "styleUrl": "img/marker-boat1.png",
     "data": [
@@ -480,11 +1104,11 @@
               "viewport": {
                 "northeast": {
                   "lat": 40.8539729,
-                  "lng": -73.6496729
+                  "lng": -73.6514732
                 },
                 "southwest": {
                   "lat": 40.8052198,
-                  "lng": -73.7217749
+                  "lng": -73.7132007
                 }
               }
             },
@@ -1298,11 +1922,11 @@
               "viewport": {
                 "northeast": {
                   "lat": 40.8539729,
-                  "lng": -73.6496729
+                  "lng": -73.6514732
                 },
                 "southwest": {
                   "lat": 40.8052198,
-                  "lng": -73.7217749
+                  "lng": -73.7132007
                 }
               }
             },
@@ -1561,7 +2185,7 @@
                   "lng": -77.307847
                 },
                 "southwest": {
-                  "lat": 34.6383188,
+                  "lat": 34.6383957,
                   "lng": -77.47990089999999
                 }
               }
@@ -1809,7 +2433,7 @@
                 },
                 "southwest": {
                   "lat": 29.86842459999999,
-                  "lng": -90.13801219999999
+                  "lng": -90.1380099
                 }
               }
             },
