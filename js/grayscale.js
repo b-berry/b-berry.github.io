@@ -1,5 +1,4 @@
 /*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -36,31 +35,18 @@ $('.navbar-collapse ul li a').click(function() {
 var map = null;
 var lat_init = 39.51;
 var lng_init = -98.17;
-//var lat_init = 40.7127837;
-//var lng_init = -74.0059413;
-// When the window has finished loading create our google map below
-//google.maps.event.addDomListener(window, 'load', initMap);
-//google.maps.event.addDomListener(window, 'resize', function() {
-//    map.setCenter(new google.maps.LatLng(lat_init,lng_init));
-//});
-
 function initMap() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 4,
 
-        // The latitude and longitude to center the map (always required)
-        //center: new google.maps.LatLng(40.6700, -73.9400),    // New York
+    var mapOptions = {
+        
+        zoom: 4,
         center: new google.maps.LatLng(lat_init,lng_init),      // Globe
+
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
         draggable: false,
 
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
         styles: [{
             "featureType": "water",
             "elementType": "geometry",
@@ -172,22 +158,10 @@ function initMap() {
     };
 
     // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
-
-    // Create the Google Map using out element and options defined above
     map = new google.maps.Map(mapElement, mapOptions);
 
-    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    //var image = 'img/map-marker.png';
-    //var kyLatLn  = new google.maps.LatLng(40.6700, -73.9400);
-    //var beachMarker = new google.maps.Marker({
-    //    position: myLatLng,
-    //    map: map,
-    //    icon: image
-    //});
-
-    // Create my Google Map
+    // Create my Google Map locations
     //var locations = require('../rb/poi.json'); 
     var locations = [
         { id: 'office', 
@@ -245,13 +219,9 @@ function initMap() {
                         anchor: new google.maps.Point(10, 34)
                       }
 
-    // Shapes define the clickable region of the icon. The type defines an HTML
-    // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-    // The final coordinate closes the poly by connecting to the first coordinate.
     var shape = { coords: [1, 1, 1, 20, 18, 20, 18, 1],
                   type: 'poly'
                 };
-
 
     for (var i = 0; i < locations.length; i++) {
       var poi = locations[i];
