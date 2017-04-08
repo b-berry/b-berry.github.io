@@ -57,6 +57,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#map">Map</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -139,7 +142,7 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact</h2>
+                <p><h2>Contact</h2></p>
                 <p>Feel free to submit a brief introduction and I will try to get back to you promptly.</p>
                 <!--<p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a></p>-->
 
@@ -174,7 +177,7 @@
                     <div class="mail-message-area">
                         <!-- Message -->
                         <div class="alert gray-bg mail-message not-visible-message">
-                            <strong>Thank You !</strong> Your email has been delivered.
+                            <strong>Thank You!</strong> Your email has been delivered.
                         </div>
                     </div>
 
@@ -184,7 +187,9 @@
     </section>
 
     <!-- Map Section -->
-    <!--<div id="map"></div>-->
+    <section id="map" class="container content-section text-center">
+    <div id="map"></div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -204,10 +209,10 @@
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMpGCnOVJZop0zdqDZI5qwgsOVik47J8Y&callback=initMap"></script>
 
     <!-- Theme JavaScript -->
-    <!--<script src="js/grayscale.js"></script>-->
-
+    <script src="js/grayscale.js"></script>
 </body>
 
 </html>
