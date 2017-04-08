@@ -34,25 +34,26 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Google Maps Scripts
 var map = null;
-var lat_init = 0;
-var lng_init = 0;
+var lat_init = 39.51;
+var lng_init = -98.17;
+//var lat_init = 40.7127837;
+//var lng_init = -74.0059413;
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(lat_init,lng_init));
-});
+//google.maps.event.addDomListener(window, 'load', initMap);
+//google.maps.event.addDomListener(window, 'resize', function() {
+//    map.setCenter(new google.maps.LatLng(lat_init,lng_init));
+//});
 
-function init() {
+function initMap() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 1,
+        zoom: 4,
 
         // The latitude and longitude to center the map (always required)
         //center: new google.maps.LatLng(40.6700, -73.9400),    // New York
         center: new google.maps.LatLng(lat_init,lng_init),      // Globe
-
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
@@ -187,24 +188,80 @@ function init() {
     //});
 
     // Create my Google Map
-    var locations = require('../rb/poi.json'); 
+    //var locations = require('../rb/poi.json'); 
+    var locations = [
+        { id: 'office', 
+          data: { name: 'EPHQ',
+                  lat: 40.7127837,
+                  lng: -74.0059413,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'star', 
+          data: { name: 'Seattle',
+                  lat: 47.6062095,
+                  lng: -122.3320708,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'human', 
+          data: { name: 'Austin',
+                  lat: 30.267153,
+                  lng: -97.7430608,
+                  zindex: 9 
+                 }, 
+        },
+        { id: 'human', 
+          data: { name: 'Minneapolis',
+                  lat: 44.977753,
+                  lng: -93.2650108,
+                  zindex: 9 
+                 }, 
+        },
+        { id: 'human', 
+          data: { name: 'San Diego',
+                  lat: 32.715738,
+                  lng: -117.1610838,
+                  zindex: 9 
+                 }, 
+        }
+    ]
 
-    //declare marker call it 'i'
-    var poi, i;
+    // Set Pin Styles
+    var styles = {};
+    styles['human'] = { url: 'img/pins/human.png', 
+                        size: new google.maps.Size(20, 34),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(10, 34)
+                      }
+    styles['office'] = { url: 'img/pins/office.png', 
+                        size: new google.maps.Size(20, 34),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(10, 34)
+                      }
+    styles['star'] = { url: 'img/pins/star.png', 
+                        size: new google.maps.Size(20, 34),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(10, 34)
+                      }
 
-    //add marker to each location poi
-    for (i = 0; i < locations.length; i++) {
+    // Shapes define the clickable region of the icon. The type defines an HTML
+    // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+    // The final coordinate closes the poly by connecting to the first coordinate.
+    var shape = { coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                  type: 'poly'
+                };
 
-        //testing
-        //console.log(locations[i]['address']);
 
-        lat = locations[i]['data']['results']['geometry']['lat']
-        lng = locations[i]['data']['results']['geometry']['lng']
- 
-        poi = new google.maps.Marker({
-                    position: new google.maps.LatLng(lat,lng),
-                    map: map,
-                    icon: locations[i]['styleUrl']
-                });
+    for (var i = 0; i < locations.length; i++) {
+      var poi = locations[i];
+      var marker = new google.maps.Marker({
+        position: { lat: poi['data']['lat'], lng: poi['data']['lng'] },
+        map: map,
+        icon: styles[ poi['id'] ],
+        shape: shape,
+        title: poi['data']['name'],
+        zIndex: poi['data']['zindex']
+      });
     }
 }
