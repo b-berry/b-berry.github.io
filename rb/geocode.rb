@@ -7,76 +7,76 @@ require 'pry'
 
 include Kamelopard
 
-Locations = [
-                {   :address => 'New York, NY',  
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'Brooklyn, NY',
-                    :styleUrl => 'img/marker-home.png' },
-                {   :address => 'San Diego, CA',
-                    :styleUrl => 'img/marker-home.png' },
-                {   :address => 'Seattle, WA',
-                    :styleUrl => 'img/marker-star.png' },
-                    # Work
-                {   :address => 'Denver, CO',
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'Los Angeles, CA',
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'San Fransisco, cA',
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'Berlin, Germany',
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'Ottawa, Canada',
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'Paris, France',
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'Seoul, South Korea',
-                    :styleUrl => 'img/marker-office.png' },
-                {   :address => 'Warsaw, Poland',
-                    :styleUrl => 'img/marker-office.png' },
-                    # Sail
-                {   :address => 'Jersey City, NJ',
-                    :styleUrl => 'img/marker-boat1.png' },
-                {   :address => 'Port Washington, NY',
-                    :styleUrl => 'img/marker-boat1.png' },
-                    # MotoTrip2016-NXNE
-                {   :address => 'Minneapolis, MN',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'Hayward, WI',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'Grand Marais, MI',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'South Baymouth, ON',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'Elora, ON',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'Batavia, NY',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'Bainbridge, NY',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'Hartford, CT',
-                    :styleUrl => 'img/marker-moto1.png' },
-                {   :address => 'Port Washington, NY',  
-                    :styleUrl => 'img/marker-moto1.png' },
-                    # MotoTrip2016-SXSW
-                {   :address => 'Cape May, NJ',
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'Elizabeth City, NC',  
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'Jacksonville, NC',
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'Aiken, GA',
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'Montgomery, AL',
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'New Orleans, LA',
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'Beaumont, TX',
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'Austin, TX',
-                    :styleUrl => 'img/marker-moto2.png' }
-            ]
+
 Sleep = 0.15
 Outfile = 'poi.json' 
+
+Locations = [
+                {   :address => 'New York, NY',  
+                    :id => 'office' },
+                {   :address => 'San Diego, CA',
+                    :id => 'human' },
+                {   :address => 'Seattle, WA',
+                    :id => 'star' },
+                    # Work
+                {   :address => 'Denver, CO',
+                    :id => 'office' },
+                {   :address => 'Los Angeles, CA',
+                    :id => 'office' },
+                {   :address => 'San Fransisco, cA',
+                    :id => 'office' },
+                {   :address => 'Berlin, Germany',
+                    :id => 'office' },
+                {   :address => 'Ottawa, Canada',
+                    :id => 'office' },
+                {   :address => 'Paris, France',
+                    :id => 'office' },
+                {   :address => 'Seoul, South Korea',
+                    :id => 'office' },
+                {   :address => 'Warsaw, Poland',
+                    :id => 'office' },
+                    # Sail
+                {   :address => 'Jersey City, NJ',
+                    :id => 'sailing' },
+                {   :address => 'Port Washington, NY',
+                    :id => 'sailing' },
+                    # MotoTrip2016-NXNE
+                {   :address => 'Minneapolis, MN',
+                    :id => 'motorcycle' },
+                {   :address => 'Hayward, WI',
+                    :id => 'motorcycle' },
+                {   :address => 'Grand Marais, MI',
+                    :id => 'motorcycle' },
+                {   :address => 'South Baymouth, ON',
+                    :id => 'motorcycle' },
+                {   :address => 'Elora, ON',
+                    :id => 'motorcycle' },
+                {   :address => 'Batavia, NY',
+                    :id => 'motorcycle' },
+                {   :address => 'Bainbridge, NY',
+                    :id => 'motorcycle' },
+                {   :address => 'Hartford, CT',
+                    :id => 'motorcycle' },
+                {   :address => 'Port Washington, NY',  
+                    :id => 'motorcycle' },
+                    # MotoTrip2016-SXSW
+                {   :address => 'Cape May, NJ',
+                    :id => 'motorcycle' },
+                {   :address => 'Elizabeth City, NC',  
+                    :id => 'motorcycle' },
+                {   :address => 'Jacksonville, NC',
+                    :id => 'motorcycle' },
+                {   :address => 'Aiken, GA',
+                    :id => 'motorcycle' },
+                {   :address => 'Montgomery, AL',
+                    :id => 'motorcycle' },
+                {   :address => 'New Orleans, LA',
+                    :id => 'motorcycle' },
+                {   :address => 'Beaumont, TX',
+                    :id => 'motorcycle' },
+                {   :address => 'Austin, TX',
+                    :id => 'motorcycle' }
+            ]
 
 def geoCode()
 
@@ -92,26 +92,23 @@ def geoCode()
     # Send query for each Line in client CSV datasheets
     Locations.each do |poi|
 
-        # initialize :data
-        poi[:data] = []
-
         query = poi[:address] 
-        poi[:data] << g.lookup(query)
+        results =  g.lookup(query)
         # Report findings
-        status = poi[:data].last.fetch("status")
+        status = results.fetch("status")
         STDOUT.puts "#{query}: #{status}"
 
         # Organize Results
         if status == "OK"
 
-            success << poi[:data].last
+            success << results 
 
             # Isolate geo
-            geo = poi[:data][0]['results'][0].select {|v| v == 'geometry'}
+            geo = results.fetch('results')[0].select {|v| v == 'geometry'}
             lat = geo['geometry']['location']['lat']
             lng = geo['geometry']['location']['lng']
-            poi[:latitude] = lat
-            poi[:longitude] = lng
+            poi[:lat] = lat
+            poi[:lng] = lng
 
             # Store in points 
             locations << poi
