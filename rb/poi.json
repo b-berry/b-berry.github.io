@@ -30,7 +30,13 @@
     "lng": -118.2436849
   },
   {
-    "address": "San Fransisco, cA",
+    "address": "Miami, FL",
+    "id": "office",
+    "lat": 25.7616798,
+    "lng": -80.1917902
+  },
+  {
+    "address": "San Fransisco, CA",
     "id": "office",
     "lat": 37.7749295,
     "lng": -122.4194155

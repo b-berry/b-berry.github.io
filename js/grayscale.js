@@ -186,6 +186,13 @@ function initMap() {
                  }, 
         },
         { id: 'office', 
+          data: { name: 'Miami',
+                  lat: 25.7616798,
+                  lng: -80.1917902,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
           data: { name: 'San Fransisco',
                   lat: 37.7749295,
                   lng: -122.4194155,
