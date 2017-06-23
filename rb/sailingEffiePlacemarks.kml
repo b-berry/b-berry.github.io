@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+    <name>sailingEffie</name>
+    <Placemark>
+        <name>WPB</name>
+        <LookAt>
+            <longitude>-80.04720529999273</longitude>
+            <latitude>26.77328260042704</latitude>
+            <altitude>0</altitude>
+            <heading>3.259273409829739e-12</heading>
+            <tilt>0</tilt>
+            <range>1000.00004271378</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-80.04720529999273,26.77328260042703,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 1</name>
+        <LookAt>
+            <longitude>-77.34607628620643</longitude>
+            <latitude>30.42538772565531</latitude>
+            <altitude>0</altitude>
+            <heading>1.258263417406145</heading>
+            <tilt>0</tilt>
+            <range>974691.2448863006</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <styleUrl>#m_ylw-pushpin</styleUrl>
+        <Point>
+            <gx:drawOrder>1</gx:drawOrder>
+            <coordinates>-78.56192109218463,29.17884640999912,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 2</name>
+        <LookAt>
+            <longitude>-77.34607628620643</longitude>
+            <latitude>30.42538772565531</latitude>
+            <altitude>0</altitude>
+            <heading>1.258263417406145</heading>
+            <tilt>0</tilt>
+            <range>974691.2448863006</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-77.35188138375925,32.16400515230616,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 3</name>
+        <LookAt>
+            <longitude>-77.80892825547291</longitude>
+            <latitude>34.20269706520385</latitude>
+            <altitude>0</altitude>
+            <heading>1.007411242608359</heading>
+            <tilt>10.38162172204774</tilt>
+            <range>3232.937459862583</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-77.80360629428668,34.20228175473438,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 4</name>
+        <LookAt>
+            <longitude>-77.1197089927264</longitude>
+            <latitude>34.68562750746966</latitude>
+            <altitude>0</altitude>
+            <heading>-0.0002958651857846497</heading>
+            <tilt>15.97781870489763</tilt>
+            <range>1094.542019529326</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-77.1172477389873,34.68615427398423,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 5</name>
+        <LookAt>
+            <longitude>-76.6641579305596</longitude>
+            <latitude>34.71754605423323</latitude>
+            <altitude>0</altitude>
+            <heading>0.2404058020552534</heading>
+            <tilt>28.75402210732669</tilt>
+            <range>1531.155067072468</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-76.66642247879238,34.71538035879805,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 5a</name>
+        <LookAt>
+            <longitude>-76.54703231184222</longitude>
+            <latitude>34.65546189250136</latitude>
+            <altitude>0</altitude>
+            <heading>0.3798565755199088</heading>
+            <tilt>8.179153662943653</tilt>
+            <range>50525.87299323005</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-76.56502875340905,34.4877410951723,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 5b</name>
+        <LookAt>
+            <longitude>-75.75739452250771</longitude>
+            <latitude>34.96321733740331</latitude>
+            <altitude>0</altitude>
+            <heading>0.8306805922484938</heading>
+            <tilt>8.3056345087299</tilt>
+            <range>245578.2558586834</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-75.31472067167815,34.99533156562151,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 6</name>
+        <LookAt>
+            <longitude>-74.06243318884694</longitude>
+            <latitude>37.63969829019731</latitude>
+            <altitude>0</altitude>
+            <heading>1.842548879540395</heading>
+            <tilt>6.087499603264105</tilt>
+            <range>788567.8109770975</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-73.79484488080961,37.05558465770837,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 7</name>
+        <LookAt>
+            <longitude>-71.93291849708892</longitude>
+            <latitude>40.15954646673046</latitude>
+            <altitude>0</altitude>
+            <heading>3.18714219316165</heading>
+            <tilt>5.598450479792125</tilt>
+            <range>211797.8581489885</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-71.76097088664596,41.04358728591249,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>Day 8</name>
+        <LookAt>
+            <longitude>-72.2008056995159</longitude>
+            <latitude>41.31165855481146</latitude>
+            <altitude>0</altitude>
+            <heading>2.81016395947073</heading>
+            <tilt>16.33065605152511</tilt>
+            <range>897.7548495335446</range>
+            <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+        </LookAt>
+        <Point>
+            <coordinates>-72.19986787822916,41.31134038637335,0</coordinates>
+        </Point>
+    </Placemark>
+</Document>
+</kml>
+

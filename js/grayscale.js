@@ -44,8 +44,8 @@ function initMap() {
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false,
+        scrollwheel: true,
+        draggable: true,
 
         styles: [{
             "featureType": "water",
@@ -227,6 +227,13 @@ function initMap() {
                   zindex: 9 
                  }, 
         },
+        { id: 'office', 
+          data: { name: 'Warsaw',
+                  lat: 50.06465009999999,
+                  lng: 19.9449799,
+                  zindex: 9 
+                 }, 
+        },
         { id: 'star', 
           data: { name: 'Seattle',
                   lat: 47.6062095,
@@ -248,6 +255,7 @@ function initMap() {
                   zindex: 9 
                  }, 
         },
+        // Mototrip 
         { id: 'start', 
           data: { name: 'Minneapolis',
                   lat: 44.977753,
@@ -261,35 +269,57 @@ function initMap() {
                   lng: -97.7430608,
                   zindex: 9 
                  }, 
+        },
+        // SailingEffie
+        { id: 'start', 
+          data: { name: 'WPB',
+                  lat: 26.77328260042703,
+                  lng:-80.04720529999273,
+                  zindex: 9 
+                 }, 
+        },
+        { id: 'sailing', 
+          data: { name: 'Niantic',
+                  lat: 41.31134038637335,
+                  lng:-72.19986787822916,
+                  //lat: 41.04358728591249,
+                  //lng:-71.76097088664596,
+                  zindex: 9 
+                 }, 
         }
     ]
 
     // Set Pin Styles
     var styles = {};
     styles['human'] = { url: 'img/pins/human.png', 
-                        size: new google.maps.Size(20, 34),
+                        size: new google.maps.Size(28, 34),
                         origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(10, 34)
+                        anchor: new google.maps.Point(14, 34)
                       }
     styles['motorcycle'] = { url: 'img/pins/motorcycle.png', 
-                        size: new google.maps.Size(20, 34),
+                        size: new google.maps.Size(28, 34),
                         origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(10, 34)
+                        anchor: new google.maps.Point(14, 34)
                       }
     styles['office'] = { url: 'img/pins/office.png', 
-                        size: new google.maps.Size(20, 34),
+                        size: new google.maps.Size(28, 34),
                         origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(10, 34)
+                        anchor: new google.maps.Point(14, 34)
+                      }
+    styles['sailing'] = { url: 'img/pins/sailing.png', 
+                        size: new google.maps.Size(28, 34),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(14, 34)
                       }
     styles['star'] = { url: 'img/pins/star.png', 
-                        size: new google.maps.Size(20, 34),
+                        size: new google.maps.Size(28, 34),
                         origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(10, 34)
+                        anchor: new google.maps.Point(14, 34)
                       }
     styles['start'] = { url: 'img/pins/start.png', 
-                        size: new google.maps.Size(20, 34),
+                        size: new google.maps.Size(28, 34),
                         origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(10, 34)
+                        anchor: new google.maps.Point(14, 34)
                       }
 
     var shape = { coords: [1, 1, 1, 20, 18, 20, 18, 1],
@@ -329,15 +359,39 @@ function initMap() {
         {lat: 30.2671530, lng: -97.74306080}
     ];
 
+    var sailingEffieCoordinates = [
+        {lat: 26.77328260042703, lng:-80.04720529999273},
+        {lat: 29.17884640999912, lng:-78.56192109218463},
+        {lat: 32.16400515230616, lng:-77.35188138375925},
+        {lat: 34.20228175473438, lng:-77.80360629428668},
+        {lat: 34.68615427398423, lng:-77.1172477389873},
+        {lat: 34.71538035879805, lng:-76.66642247879238},
+        {lat: 34.4877410951723, lng:-76.56502875340905},
+        {lat: 34.99533156562151, lng:-75.31472067167815},
+        {lat: 37.05558465770837, lng:-73.79484488080961},
+        {lat: 41.04358728591249, lng:-71.76097088664596},
+        {lat: 41.31134038637335, lng:-72.19986787822916}
+    ];
+
     // Set Polyline Styles
-    var flightPath = new google.maps.Polyline({
+    var motoPath = new google.maps.Polyline({
         path: motoRideCoordinates,
         geodesic: true,
         strokeColor: '#42DCA3',
         strokeOpacity: 1.0,
-        strokeWeight: 2
+        strokeWeight: 3 
     });
 
-    flightPath.setMap(map);
+    motoPath.setMap(map);
+
+    var sailingPath = new google.maps.Polyline({
+        path: sailingEffieCoordinates,
+        geodesic: true,
+        strokeColor: '#dca342',
+        strokeOpacity: 1.0,
+        strokeWeight: 3 
+    });
+
+    sailingPath.setMap(map);
 
 }

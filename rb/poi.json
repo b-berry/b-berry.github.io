@@ -72,6 +72,12 @@
     "lng": 21.0122287
   },
   {
+    "address": "Krakow, Poland",
+    "id": "office",
+    "lat": 50.06465009999999,
+    "lng": 19.9449799
+  },
+  {
     "address": "Jersey City, NJ",
     "id": "sailing",
     "lat": 40.72815749999999,

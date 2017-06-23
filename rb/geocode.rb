@@ -3,7 +3,7 @@
 require 'fileutils'
 require 'kamelopard'
 require 'json'
-require 'pry'
+#require 'pry'
 
 include Kamelopard
 
@@ -36,6 +36,8 @@ Locations = [
                 {   :address => 'Seoul, South Korea',
                     :id => 'office' },
                 {   :address => 'Warsaw, Poland',
+                    :id => 'office' },
+                {   :address => 'Krakow, Poland',
                     :id => 'office' },
                     # Sail
                 {   :address => 'Jersey City, NJ',
