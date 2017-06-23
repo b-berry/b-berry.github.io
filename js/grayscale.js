@@ -45,7 +45,7 @@ function initMap() {
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: true,
-        draggable: true,
+        draggable: false,
 
         styles: [{
             "featureType": "water",
