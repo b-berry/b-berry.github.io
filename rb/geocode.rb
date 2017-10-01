@@ -56,7 +56,24 @@ Locations = [
                 {   :address => 'Beaumont, TX',
                     :styleUrl => 'img/marker-moto2.png' },
                 {   :address => 'Austin, TX',
-                    :styleUrl => 'img/marker-moto2.png' }
+                    :styleUrl => 'img/marker-moto2.png' },
+                    # MotoTrip2016-NXNW
+                {   :address => 'Hobbs, NM',
+                    :styleUrl => 'img/marker-moto2.png' },
+                {   :address => 'Magdalena, NM',
+                    :styleUrl => 'img/marker-moto2.png' },
+                {   :address => 'Flagstaff, AZ',
+                    :styleUrl => 'img/marker-office.png' },
+                {   :address => 'Marble Canyon, AZ',
+                    :styleUrl => 'img/marker-moto2.png' },
+                {   :address => 'Provo, UT',
+                    :styleUrl => 'img/marker-moto2.png' },
+                {   :address => 'Boise, ID',
+                    :styleUrl => 'img/marker-moto2.png' },
+                {   :address => 'Pendleton, OR',
+                    :styleUrl => 'img/marker-moto2.png' },
+                {   :address => 'Seattle, WA',
+                    :styleUrl => 'img/marker-star.png' }
             ]
 Sleep = 0.15
 Outfile = 'poi.json' 
