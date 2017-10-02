@@ -71,9 +71,7 @@ Locations = [
                 {   :address => 'Boise, ID',
                     :styleUrl => 'img/marker-moto2.png' },
                 {   :address => 'Pendleton, OR',
-                    :styleUrl => 'img/marker-moto2.png' },
-                {   :address => 'Seattle, WA',
-                    :styleUrl => 'img/marker-star.png' }
+                    :styleUrl => 'img/marker-moto2.png' }
             ]
 Sleep = 0.15
 Outfile = 'poi.json' 
