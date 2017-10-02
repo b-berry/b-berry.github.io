@@ -79,6 +79,21 @@ Locations = [
                 {   :address => 'Beaumont, TX',
                     :id => 'motorcycle' },
                 {   :address => 'Austin, TX',
+                    :id => 'motorcycle' },
+                    # MotoTrip2016-NXNW
+                {   :address => 'Hobbs, NM',
+                    :id => 'motorcycle' },
+                {   :address => 'Magdalena, NM',
+                    :id => 'motorcycle' },
+                {   :address => 'Flagstaff, AZ',
+                    :id => 'office' },
+                {   :address => 'Marble Canyon, AZ',
+                    :id => 'motorcycle' },
+                {   :address => 'Provo, UT',
+                    :id => 'motorcycle' },
+                {   :address => 'Boise, ID',
+                    :id => 'motorcycle' },
+                {   :address => 'Pendleton, OR',
                     :id => 'motorcycle' }
             ]
 

@@ -190,5 +190,47 @@
     "id": "motorcycle",
     "lat": 30.267153,
     "lng": -97.7430608
+  },
+  {
+    "address": "Hobbs, NM",
+    "id": "motorcycle",
+    "lat": 32.7026116,
+    "lng": -103.1360403
+  },
+  {
+    "address": "Magdalena, NM",
+    "id": "motorcycle",
+    "lat": 34.1167305,
+    "lng": -107.2439251
+  },
+  {
+    "address": "Flagstaff, AZ",
+    "id": "office",
+    "lat": 35.1982836,
+    "lng": -111.651302
+  },
+  {
+    "address": "Marble Canyon, AZ",
+    "id": "motorcycle",
+    "lat": 36.816235,
+    "lng": -111.6373384
+  },
+  {
+    "address": "Provo, UT",
+    "id": "motorcycle",
+    "lat": 40.2338438,
+    "lng": -111.6585337
+  },
+  {
+    "address": "Boise, ID",
+    "id": "motorcycle",
+    "lat": 43.6187102,
+    "lng": -116.2146068
+  },
+  {
+    "address": "Pendleton, OR",
+    "id": "motorcycle",
+    "lat": 45.672075,
+    "lng": -118.7885967
   }
 ]

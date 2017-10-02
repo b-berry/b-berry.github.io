@@ -234,7 +234,7 @@ function initMap() {
                   zindex: 9 
                  }, 
         },
-        { id: 'star', 
+        { id: 'motorcycle', 
           data: { name: 'Seattle',
                   lat: 47.6062095,
                   lng: -122.3320708,
@@ -263,7 +263,7 @@ function initMap() {
                   zindex: 9 
                  }, 
         },
-        { id: 'motorcycle', 
+        { id: 'office', 
           data: { name: 'Austin',
                   lat: 30.267153,
                   lng: -97.7430608,
@@ -356,7 +356,16 @@ function initMap() {
         {lat: 32.3668052, lng: -86.29996890},
         {lat: 29.9510657, lng: -90.07153230},
         {lat: 30.0801740, lng: -94.12655620},
-        {lat: 30.2671530, lng: -97.74306080}
+        {lat: 30.2671530, lng: -97.74306080},
+        {lat: 32.7026116, lng: -103.1360403},
+        {lat: 34.1167305, lng: -107.2439251},
+        {lat: 35.1982836, lng: -111.6513020},
+        {lat: 36.8162350, lng: -111.6373384},
+        {lat: 40.2338438, lng: -111.6585337},
+        {lat: 43.6187102, lng: -116.2146068},
+        {lat: 45.6720750, lng: -118.7885967},
+        {lat: 47.6062095, lng: -122.3320708}
+
     ];
 
     var sailingEffieCoordinates = [
