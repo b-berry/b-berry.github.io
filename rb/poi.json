@@ -78,6 +78,12 @@
     "lng": 19.9449799
   },
   {
+    "address": "La Serena, Chile",
+    "id": "office",
+    "lat": -29.9026691,
+    "lng": -71.2519374
+  },
+  {
     "address": "Jersey City, NJ",
     "id": "sailing",
     "lat": 40.72815749999999,

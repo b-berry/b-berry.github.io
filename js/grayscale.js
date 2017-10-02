@@ -33,12 +33,8 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Google Maps Scripts
 var map = null;
-var lat_init = 39.51;
-var lng_init = -108.17;
-function initMap() {
-
-    var mapOptions = {
-        
+var lat_init = 33.51;
+var lng_init = 
         zoom: 3,
         center: new google.maps.LatLng(lat_init,lng_init),      // Globe
 
@@ -175,6 +171,13 @@ function initMap() {
           data: { name: 'Denver',
                   lat: 39.7392358,
                   lng: -104.990251,
+                  zindex: 10
+                 }, 
+        },
+        { id: 'office', 
+          data: { name: 'La Serena',
+                  lat: -29.9026691,
+                  lng: -71.2519374,
                   zindex: 10
                  }, 
         },

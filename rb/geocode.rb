@@ -39,6 +39,8 @@ Locations = [
                     :id => 'office' },
                 {   :address => 'Krakow, Poland',
                     :id => 'office' },
+                {   :address => 'La Serena, Chile',
+                    :id => 'office' },
                     # Sail
                 {   :address => 'Jersey City, NJ',
                     :id => 'sailing' },
