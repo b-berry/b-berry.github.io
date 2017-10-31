@@ -33,9 +33,14 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Google Maps Scripts
 var map = null;
-var lat_init = 33.51;
-var lng_init = 
-        zoom: 3,
+var lat_init = 23;
+var lng_init = -7;
+
+function initMap() {
+
+    var mapOptions = {
+
+        zoom: 2,
         center: new google.maps.LatLng(lat_init,lng_init),      // Globe
 
         // Disables the default Google Maps UI components
